@@ -1,8 +1,14 @@
+window.addEventListener("load", function () {
+  document.getElementById("loader-wrapper").style.display = "none";
+  document.body.classList.remove("overflow");
+});
 const chk = document.getElementById("chk");
 
 chk.addEventListener("change", () => {
   document.body.classList.toggle("dark");
 });
+
+// Handle loader
 
 /*===== MENU SHOW =====*/
 const showMenu = (toggleId, navId) => {
